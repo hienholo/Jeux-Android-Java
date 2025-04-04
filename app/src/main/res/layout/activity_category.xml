@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_brick">
+
+
+    <Button
+        android:id="@+id/btnCapteurs"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Capteurs"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/btnMouvement"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Mouvement sur l'écran"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+
+    <Button
+        android:id="@+id/btnQuestion"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Question-Réponse"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>
