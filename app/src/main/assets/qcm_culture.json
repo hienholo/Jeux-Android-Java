@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "question": "Quelle est la capitale de l'Australie ?",
+    "reponse": "Canberra",
+    "propositions": ["Sydney", "Melbourne", "Canberra", "Perth"],
+    "theme": "Géographie",
+    "niveau": "Facile"
+  },
+  {
+    "id": 2,
+    "question": "Quel est le plus long fleuve du monde ?",
+    "reponse": "Le Nil",
+    "propositions": ["L'Amazone", "Le Nil", "Le Yangzi Jiang", "Le Mississippi"],
+    "theme": "Géographie",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 3,
+    "question": "Dans quel pays se trouve le monument de Pétra ?",
+    "reponse": "Jordanie",
+    "propositions": ["Égypte", "Jordanie", "Israël", "Arabie Saoudite"],
+    "theme": "Géographie",
+    "niveau": "Avancé"
+  },
+  {
+    "id": 4,
+    "question": "Qui a écrit 'Les Misérables' ?",
+    "reponse": "Victor Hugo",
+    "propositions": ["Victor Hugo", "Gustave Flaubert", "Émile Zola", "Alexandre Dumas"],
+    "theme": "Littérature",
+    "niveau": "Facile"
+  },
+  {
+    "id": 5,
+    "question": "Quel est le nom du royaume dans 'Le Roi Lion' ?",
+    "reponse": "La Terre des Lions",
+    "propositions": ["La Savane Éternelle", "Le Royaume de Mufasa", "La Terre des Lions", "Le Cercle de la Vie"],
+    "theme": "Cinéma",
+    "niveau": "Facile"
+  },
+  {
+    "id": 6,
+    "question": "Quel élément chimique a pour symbole 'Ag' ?",
+    "reponse": "Argent",
+    "propositions": ["Or", "Argent", "Aluminium", "Argon"],
+    "theme": "Chimie",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 7,
+    "question": "Quelle est la vitesse du son dans l'air ?",
+    "reponse": "343 m/s",
+    "propositions": ["123 m/s", "343 m/s", "500 m/s", "1000 m/s"],
+    "theme": "Physique",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 8,
+    "question": "Qui a peint 'La Nuit étoilée' ?",
+    "reponse": "Vincent van Gogh",
+    "propositions": ["Vincent van Gogh", "Pablo Picasso", "Claude Monet", "Salvador Dalí"],
+    "theme": "Art",
+    "niveau": "Facile"
+  },
+  {
+    "id": 9,
+    "question": "Quel est le plus grand organe du corps humain ?",
+    "reponse": "La peau",
+    "propositions": ["Le foie", "Le cerveau", "La peau", "Le cœur"],
+    "theme": "Biologie",
+    "niveau": "Facile"
+  },
+  {
+    "id": 10,
+    "question": "Quelle est la monnaie officielle de la Suisse ?",
+    "reponse": "Franc suisse",
+    "propositions": ["Euro", "Livre sterling", "Franc suisse", "Couronne norvégienne"],
+    "theme": "Économie",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 11,
+    "question": "Quel est le nom de la théorie expliquant l'origine de l'univers ?",
+    "reponse": "Big Bang",
+    "propositions": ["Big Crunch", "Big Bang", "Expansion continue", "Théorie des cordes"],
+    "theme": "Astronomie",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 12,
+    "question": "Quel pays a remporté la Coupe du Monde de Football en 2018 ?",
+    "reponse": "France",
+    "propositions": ["Allemagne", "Brésil", "France", "Espagne"],
+    "theme": "Sport",
+    "niveau": "Facile"
+  },
+  {
+    "id": 13,
+    "question": "Qui a inventé la théorie de la relativité ?",
+    "reponse": "Albert Einstein",
+    "propositions": ["Isaac Newton", "Albert Einstein", "Stephen Hawking", "Galilée"],
+    "theme": "Science",
+    "niveau": "Facile"
+  },
+  {
+    "id": 14,
+    "question": "Quelle est la capitale de la Finlande ?",
+    "reponse": "Helsinki",
+    "propositions": ["Oslo", "Stockholm", "Helsinki", "Copenhague"],
+    "theme": "Géographie",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 15,
+    "question": "Quel est le nom du premier homme à avoir marché sur la Lune ?",
+    "reponse": "Neil Armstrong",
+    "propositions": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "John Glenn"],
+    "theme": "Histoire",
+    "niveau": "Facile"
+  },
+  {
+    "id": 16,
+    "question": "Quelle est la langue officielle du Brésil ?",
+    "reponse": "Portugais",
+    "propositions": ["Espagnol", "Portugais", "Français", "Anglais"],
+    "theme": "Linguistique",
+    "niveau": "Facile"
+  },
+  {
+    "id": 17,
+    "question": "Quel est le plus grand lac d'Afrique ?",
+    "reponse": "Lac Victoria",
+    "propositions": ["Lac Tanganyika", "Lac Malawi", "Lac Victoria", "Lac Turkana"],
+    "theme": "Géographie",
+    "niveau": "Avancé"
+  },
+  {
+    "id": 18,
+    "question": "Qui a écrit '1984' ?",
+    "reponse": "George Orwell",
+    "propositions": ["Aldous Huxley", "George Orwell", "Ray Bradbury", "Philip K. Dick"],
+    "theme": "Littérature",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 19,
+    "question": "Quel est le nom du fondateur de Microsoft ?",
+    "reponse": "Bill Gates",
+    "propositions": ["Steve Jobs", "Bill Gates", "Mark Zuckerberg", "Elon Musk"],
+    "theme": "Technologie",
+    "niveau": "Facile"
+  },
+  {
+    "id": 20,
+    "question": "Quelle est la plus haute montagne d'Afrique ?",
+    "reponse": "Kilimandjaro",
+    "propositions": ["Mont Kenya", "Kilimandjaro", "Mont Elgon", "Ras Dashan"],
+    "theme": "Géographie",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 21,
+    "question": "Quel est le symbole chimique du potassium ?",
+    "reponse": "K",
+    "propositions": ["P", "Pt", "K", "Ko"],
+    "theme": "Chimie",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 22,
+    "question": "Qui a peint 'Le Cri' ?",
+    "reponse": "Edvard Munch",
+    "propositions": ["Edvard Munch", "Vincent van Gogh", "Pablo Picasso", "Salvador Dalí"],
+    "theme": "Art",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 23,
+    "question": "Quelle est la capitale du Canada ?",
+    "reponse": "Ottawa",
+    "propositions": ["Toronto", "Montréal", "Vancouver", "Ottawa"],
+    "theme": "Géographie",
+    "niveau": "Facile"
+  },
+  {
+    "id": 24,
+    "question": "Quel est le nom du dieu grec de la guerre ?",
+    "reponse": "Arès",
+    "propositions": ["Zeus", "Poséidon", "Arès", "Hermès"],
+    "theme": "Mythologie",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 25,
+    "question": "Quelle est la planète la plus chaude du système solaire ?",
+    "reponse": "Vénus",
+    "propositions": ["Mercure", "Vénus", "Mars", "Jupiter"],
+    "theme": "Astronomie",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 26,
+    "question": "Qui a découvert les lois du mouvement ?",
+    "reponse": "Isaac Newton",
+    "propositions": ["Galilée", "Isaac Newton", "Albert Einstein", "Nicolas Copernic"],
+    "theme": "Science",
+    "niveau": "Facile"
+  },
+  {
+    "id": 27,
+    "question": "Quelle est la langue la plus parlée en Afrique ?",
+    "reponse": "Arabe",
+    "propositions": ["Swahili", "Arabe", "Français", "Anglais"],
+    "theme": "Linguistique",
+    "niveau": "Avancé"
+  },
+  {
+    "id": 28,
+    "question": "Quel est le nom de la plus grande forêt tropicale du monde ?",
+    "reponse": "Amazonie",
+    "propositions": ["Congo", "Amazonie", "Bornéo", "Australie"],
+    "theme": "Géographie",
+    "niveau": "Facile"
+  },
+  {
+    "id": 29,
+    "question": "Quel est le plus petit pays du monde ?",
+    "reponse": "Vatican",
+    "propositions": ["Monaco", "Nauru", "Vatican", "San Marino"],
+    "theme": "Géographie",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 30,
+    "question": "Qui a composé la Symphonie n°9 'Du Nouveau Monde' ?",
+    "reponse": "Antonín Dvořák",
+    "propositions": ["Ludwig van Beethoven", "Wolfgang Amadeus Mozart", "Antonín Dvořák", "Johann Sebastian Bach"],
+    "theme": "Musique",
+    "niveau": "Avancé"
+  },
+  {
+    "id": 31,
+    "question": "Quel est l'organe responsable de la production d'insuline ?",
+    "reponse": "Pancréas",
+    "propositions": ["Foie", "Pancréas", "Rein", "Cœur"],
+    "theme": "Biologie",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 32,
+    "question": "Quelle est la capitale de l'Islande ?",
+    "reponse": "Reykjavik",
+    "propositions": ["Oslo", "Reykjavik", "Helsinki", "Stockholm"],
+    "theme": "Géographie",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 33,
+    "question": "Quel est le nom du fondateur de SpaceX ?",
+    "reponse": "Elon Musk",
+    "propositions": ["Jeff Bezos", "Elon Musk", "Richard Branson", "Bill Gates"],
+    "theme": "Technologie",
+    "niveau": "Facile"
+  },
+  {
+    "id": 34,
+    "question": "Quelle est la plus haute montagne d'Amérique du Nord ?",
+    "reponse": "Denali",
+    "propositions": ["Mont Whitney", "Denali", "Mont Elbert", "Mont Rainier"],
+    "theme": "Géographie",
+    "niveau": "Avancé"
+  },
+  {
+    "id": 35,
+    "question": "Quel est le nom de la plus grande île du monde ?",
+    "reponse": "Groenland",
+    "propositions": ["Australie", "Groenland", "Nouvelle-Guinée", "Bornéo"],
+    "theme": "Géographie",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 36,
+    "question": "Qui a écrit 'Le Petit Prince' ?",
+    "reponse": "Antoine de Saint-Exupéry",
+    "propositions": ["Victor Hugo", "Antoine de Saint-Exupéry", "Jules Verne", "Albert Camus"],
+    "theme": "Littérature",
+    "niveau": "Facile"
+  },
+  {
+    "id": 37,
+    "question": "Quel est le nom du premier satellite artificiel ?",
+    "reponse": "Spoutnik 1",
+    "propositions": ["Explorer 1", "Spoutnik 1", "Hubble", "Voyager 1"],
+    "theme": "Science",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 38,
+    "question": "Quelle est la monnaie officielle du Japon ?",
+    "reponse": "Yen",
+    "propositions": ["Yuan", "Yen", "Won", "Dollar"],
+    "theme": "Économie",
+    "niveau": "Facile"
+  },
+  {
+    "id": 39,
+    "question": "Quel est le plus grand désert chaud du monde ?",
+    "reponse": "Sahara",
+    "propositions": ["Gobi", "Sahara", "Kalahari", "Arabie"],
+    "theme": "Géographie",
+    "niveau": "Facile"
+  },
+  {
+    "id": 40,
+    "question": "Qui a peint 'La Jeune Fille à la perle' ?",
+    "reponse": "Johannes Vermeer",
+    "propositions": ["Rembrandt", "Johannes Vermeer", "Vincent van Gogh", "Claude Monet"],
+    "theme": "Art",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 41,
+    "question": "Quelle est la capitale de la Nouvelle-Zélande ?",
+    "reponse": "Wellington",
+    "propositions": ["Auckland", "Christchurch", "Wellington", "Hamilton"],
+    "theme": "Géographie",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 42,
+    "question": "Quel est le nom du fondateur d'Amazon ?",
+    "reponse": "Jeff Bezos",
+    "propositions": ["Elon Musk", "Jeff Bezos", "Mark Zuckerberg", "Bill Gates"],
+    "theme": "Technologie",
+    "niveau": "Facile"
+  },
+  {
+    "id": 43,
+    "question": "Quel est le plus grand animal terrestre ?",
+    "reponse": "Éléphant d'Afrique",
+    "propositions": ["Girafe", "Éléphant d'Afrique", "Rhinocéros", "Hippopotame"],
+    "theme": "Biologie",
+    "niveau": "Facile"
+  },
+  {
+    "id": 44,
+    "question": "Quelle est la plus grande ville des États-Unis ?",
+    "reponse": "New York",
+    "propositions": ["Los Angeles", "Chicago", "New York", "Houston"],
+    "theme": "Géographie",
+    "niveau": "Facile"
+  },
+  {
+    "id": 45,
+    "question": "Quel est le nom du dieu romain de la mer ?",
+    "reponse": "Neptune",
+    "propositions": ["Jupiter", "Mars", "Neptune", "Pluton"],
+    "theme": "Mythologie",
+    "niveau": "Facile"
+  },
+  {
+    "id": 46,
+    "question": "Quelle est la plus haute chute d'eau du monde ?",
+    "reponse": "Salto Angel",
+    "propositions": ["Niagara", "Salto Angel", "Victoria", "Iguazu"],
+    "theme": "Géographie",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 47,
+    "question": "Quel est le nom du premier président des États-Unis ?",
+    "reponse": "George Washington",
+    "propositions": ["Thomas Jefferson", "George Washington", "Abraham Lincoln", "John Adams"],
+    "theme": "Histoire",
+    "niveau": "Facile"
+  },
+  {
+    "id": 48,
+    "question": "Quelle est la langue officielle de l'Argentine ?",
+    "reponse": "Espagnol",
+    "propositions": ["Portugais", "Espagnol", "Français", "Anglais"],
+    "theme": "Linguistique",
+    "niveau": "Facile"
+  },
+  {
+    "id": 49,
+    "question": "Quel est le plus grand océan du monde ?",
+    "reponse": "Pacifique",
+    "propositions": ["Atlantique", "Indien", "Pacifique", "Arctique"],
+    "theme": "Géographie",
+    "niveau": "Facile"
+  },
+  {
+    "id": 50,
+    "question": "Qui a écrit 'Hamlet' ?",
+    "reponse": "William Shakespeare",
+    "propositions": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
+    "theme": "Littérature",
+    "niveau": "Facile"
+  }
+]

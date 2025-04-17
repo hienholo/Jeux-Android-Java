@@ -6,7 +6,13 @@ import android.os.Bundle;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.iot.jeux_mobile.capteur.BluetoothGameActivity;
 import com.iot.jeux_mobile.capteur.JeuxCap1;
+import com.iot.jeux_mobile.capteur.JeuxCapMultiplayer;
+import com.iot.jeux_mobile.capteur.JeuxCapteur2;
+import com.iot.jeux_mobile.capteur.JeuLabyrintheActivity;
+import com.iot.jeux_mobile.qcm.CalculMental;
+import com.iot.jeux_mobile.qcm.QuizActivity;
 
 public class CategoryActivity extends AppCompatActivity {
     private Button btnCapteurs, btnMouvement, btnQuestion;
@@ -21,7 +27,8 @@ public class CategoryActivity extends AppCompatActivity {
         btnQuestion = findViewById(R.id.btnQuestion);
 
         btnCapteurs.setOnClickListener(v -> {
-            Intent intent = new Intent(CategoryActivity.this, JeuxCap1.class);
+            Intent intent;
+            intent = new Intent(CategoryActivity.this, CalculMental.class);
             startActivity(intent);
         });
 
@@ -30,9 +37,9 @@ public class CategoryActivity extends AppCompatActivity {
 //            startActivity(intent);
 //        });
 //
-//        btnQuestion.setOnClickListener(v -> {
-//            Intent intent = new Intent(CategoryActivity.this, GameQuestionActivity.class);
-//            startActivity(intent);
-//        });
+        btnQuestion.setOnClickListener(v -> {
+            Intent intent = new Intent(CategoryActivity.this, QuizActivity.class);
+            startActivity(intent);
+        });
     }
 }

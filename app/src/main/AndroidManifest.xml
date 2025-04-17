@@ -2,7 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+
     <uses-permission android:name="android.permission.BODY_SENSORS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+    <uses-permission android:name="android.hardware.sensor.accelerometer"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+
 
     <application
         android:allowBackup="true"
@@ -23,7 +38,21 @@
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
         <activity android:name=".capteur.JeuxCap1"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity android:name=".capteur.JeuxCapteur2"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
 
+        <activity android:name=".capteur.BluetoothGameActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+
+        <activity
+            android:name=".capteur.JeuxCapMultiplayer"/>
+        <activity
+            android:name=".capteur.JeuLabyrintheActivity"/>
+
+        <activity
+            android:name=".qcm.CalculMental"/>
+        <activity
+            android:name=".qcm.QuizActivity"/>
 
     </application>
 </manifest>
