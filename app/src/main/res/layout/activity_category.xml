@@ -10,43 +10,48 @@
         android:id="@+id/btnCapteurs"
         android:layout_width="300dp"
         android:layout_height="70dp"
-        android:backgroundTint="#FFFFFF"
-        android:text="Capteurs"
+        android:text="CAPTEURS"
         android:textAllCaps="false"
-        android:textColor="#000000"
-        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
         android:padding="12dp"
         android:drawablePadding="8dp"
         android:gravity="center"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-black" />
+
 
     <Button
         android:id="@+id/btnMouvement"
         android:layout_width="300dp"
         android:layout_height="70dp"
-        android:backgroundTint="#FFFFFF"
         android:text="Mouvement sur l'écran"
         android:textAllCaps="false"
-        android:textColor="#000000"
-        android:textSize="18sp"
         android:padding="12dp"
         android:drawablePadding="8dp"
         android:gravity="center"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-black" />
 
 
     <Button
         android:id="@+id/btnQuestion"
         android:layout_width="300dp"
         android:layout_height="70dp"
-        android:backgroundTint="#FFFFFF"
-        android:text="Question-Réponse"
+        android:text="Q-C-M"
         android:textAllCaps="false"
-        android:textColor="#000000"
-        android:textSize="18sp"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-black"
+        android:background="@drawable/btn_border"
         android:padding="12dp"
         android:drawablePadding="8dp"
         android:gravity="center"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp" />
+
 
 </LinearLayout>

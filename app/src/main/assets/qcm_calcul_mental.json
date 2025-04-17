@@ -1,0 +1,392 @@
+[
+  {
+    "id": 1,
+    "question": "16 + 11 = ?",
+    "reponse": "27",
+    "propositions": [
+      "26",
+      "25",
+      "27",
+      "28"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Débutant"
+  },
+  {
+    "id": 2,
+    "question": "15 + 2 = ?",
+    "reponse": "17",
+    "propositions": [
+      "17",
+      "19",
+      "20",
+      "14"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Débutant"
+  },
+  {
+    "id": 3,
+    "question": "3 - 3 = ?",
+    "reponse": "0",
+    "propositions": [
+      "2",
+      "-3",
+      "0",
+      "-2"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Débutant"
+  },
+  {
+    "id": 4,
+    "question": "1 - 4 = ?",
+    "reponse": "-3",
+    "propositions": [
+      "-4",
+      "-3",
+      "-6",
+      "0"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Débutant"
+  },
+  {
+    "id": 5,
+    "question": "10 + 8 = ?",
+    "reponse": "18",
+    "propositions": [
+      "21",
+      "20",
+      "15",
+      "18"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Débutant"
+  },
+  {
+    "id": 6,
+    "question": "18 + 2 = ?",
+    "reponse": "20",
+    "propositions": [
+      "20",
+      "17",
+      "19",
+      "18"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Débutant"
+  },
+  {
+    "id": 7,
+    "question": "4 - 14 = ?",
+    "reponse": "-10",
+    "propositions": [
+      "-10",
+      "-12",
+      "-11",
+      "-8"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Débutant"
+  },
+  {
+    "id": 8,
+    "question": "12 + 7 = ?",
+    "reponse": "19",
+    "propositions": [
+      "19",
+      "21",
+      "17",
+      "18"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Débutant"
+  },
+  {
+    "id": 9,
+    "question": "20 - 15 = ?",
+    "reponse": "5",
+    "propositions": [
+      "6",
+      "5",
+      "4",
+      "2"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Débutant"
+  },
+  {
+    "id": 10,
+    "question": "12 - 3 = ?",
+    "reponse": "9",
+    "propositions": [
+      "11",
+      "8",
+      "9",
+      "12"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Débutant"
+  },
+  {
+    "id": 11,
+    "question": "44 + 38 = ?",
+    "reponse": "82",
+    "propositions": [
+      "82",
+      "83",
+      "79",
+      "84"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 12,
+    "question": "43 + 15 = ?",
+    "reponse": "58",
+    "propositions": [
+      "58",
+      "55",
+      "60",
+      "61"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 13,
+    "question": "35 * 13 = ?",
+    "reponse": "455",
+    "propositions": [
+      "452",
+      "455",
+      "454",
+      "453"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 14,
+    "question": "10 + 24 = ?",
+    "reponse": "34",
+    "propositions": [
+      "33",
+      "37",
+      "34",
+      "32"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 15,
+    "question": "23 * 11 = ?",
+    "reponse": "253",
+    "propositions": [
+      "253",
+      "255",
+      "250",
+      "252"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 16,
+    "question": "33 + 11 = ?",
+    "reponse": "44",
+    "propositions": [
+      "45",
+      "44",
+      "42",
+      "43"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 17,
+    "question": "41 - 22 = ?",
+    "reponse": "19",
+    "propositions": [
+      "18",
+      "19",
+      "17",
+      "22"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 18,
+    "question": "34 * 48 = ?",
+    "reponse": "1632",
+    "propositions": [
+      "1632",
+      "1629",
+      "1633",
+      "1630"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 19,
+    "question": "43 * 40 = ?",
+    "reponse": "1720",
+    "propositions": [
+      "1718",
+      "1723",
+      "1720",
+      "1721"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 20,
+    "question": "25 + 33 = ?",
+    "reponse": "58",
+    "propositions": [
+      "58",
+      "59",
+      "57",
+      "56"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "id": 21,
+    "question": "88 * 32 = ?",
+    "reponse": "2816",
+    "propositions": [
+      "2817",
+      "2815",
+      "2818",
+      "2816"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Avancé"
+  },
+  {
+    "id": 22,
+    "question": "26 + 84 = ?",
+    "reponse": "110",
+    "propositions": [
+      "112",
+      "113",
+      "110",
+      "108"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Avancé"
+  },
+  {
+    "id": 23,
+    "question": "69 - 27 = ?",
+    "reponse": "42",
+    "propositions": [
+      "41",
+      "43",
+      "40",
+      "42"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Avancé"
+  },
+  {
+    "id": 24,
+    "question": "0 / 45 = ?",
+    "reponse": "0",
+    "propositions": [
+      "-3",
+      "-2",
+      "1",
+      "0"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Avancé"
+  },
+  {
+    "id": 25,
+    "question": "63 - 65 = ?",
+    "reponse": "-2",
+    "propositions": [
+      "-4",
+      "-2",
+      "1",
+      "0"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Avancé"
+  },
+  {
+    "id": 26,
+    "question": "33 * 91 = ?",
+    "reponse": "3003",
+    "propositions": [
+      "3004",
+      "3003",
+      "3006",
+      "3002"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Avancé"
+  },
+  {
+    "id": 27,
+    "question": "35 * 94 = ?",
+    "reponse": "3290",
+    "propositions": [
+      "3289",
+      "3288",
+      "3290",
+      "3293"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Avancé"
+  },
+  {
+    "id": 28,
+    "question": "55 / 55 = ?",
+    "reponse": "1",
+    "propositions": [
+      "0",
+      "4",
+      "1",
+      "-2"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Avancé"
+  },
+  {
+    "id": 29,
+    "question": "66 + 85 = ?",
+    "reponse": "151",
+    "propositions": [
+      "151",
+      "149",
+      "154",
+      "150"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Avancé"
+  },
+  {
+    "id": 30,
+    "question": "54 / 54 = ?",
+    "reponse": "1",
+    "propositions": [
+      "1",
+      "0",
+      "-1",
+      "2"
+    ],
+    "theme": "Calcul mental",
+    "niveau": "Avancé"
+  }
+]
