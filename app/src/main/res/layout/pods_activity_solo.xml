@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/black"
+    >
+
+    <!-- Contenu principal (jeu) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="742dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Timer + Score -->
+
+        <!-- Grille des boutons -->
+
+        <TextView
+            android:id="@+id/scoreText2"
+            android:layout_width="442dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/game_title"
+            android:textColor="@color/secondaryColor"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="70dp"
+            >
+
+            <TextView
+                android:id="@+id/timerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/scoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="Score: 0"
+                android:textColor="@color/white"
+                android:textSize="50sp" />
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="337dp"
+            android:layout_height="369dp"
+            android:layout_marginTop="70dp"
+            android:columnCount="2"
+            android:gravity="center"
+            android:rowCount="2">
+
+            <Button
+                android:id="@+id/pod1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp" />
+
+            <Button
+                android:id="@+id/pod2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp" />
+
+            <Button
+                android:id="@+id/pod3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp" />
+
+            <Button
+                android:id="@+id/pod4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/player_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+
+    <!-- Écran d'attente (masqué par défaut) -->
+    <include
+        layout="@layout/waiting_screen"
+        android:id="@+id/waiting_layout"
+        android:visibility="gone"/>
+</FrameLayout>

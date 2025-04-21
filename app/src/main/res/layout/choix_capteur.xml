@@ -19,37 +19,28 @@
         android:padding="16dp">
 
         <Button
-            android:id="@+id/btnCapteurs"
+            android:id="@+id/btnCalcul"
             android:layout_width="300dp"
             android:layout_height="70dp"
-            android:text="CAPTEURS"
+            android:text="Culture Générale"
             android:textAllCaps="false"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:textColor="#FFFFFF"
+            android:backgroundTint="#000000"
             android:fontFamily="sans-serif-black"
             android:padding="12dp"
+
             android:layout_margin="10dp" />
 
         <Button
-            android:id="@+id/btnMouvement"
+            android:id="@+id/btnCulture"
             android:layout_width="300dp"
             android:layout_height="70dp"
-            android:text="TAP SCREEN"
+            android:text="Calcul Mental"
             android:textAllCaps="false"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:textColor="#FFFFFF"
-            android:fontFamily="sans-serif-black"
-            android:padding="12dp"
-            android:layout_margin="10dp" />
-
-        <Button
-            android:id="@+id/btnQuestion"
-            android:layout_width="300dp"
-            android:layout_height="70dp"
-            android:text="Q-C-M"
-            android:textAllCaps="false"
-            android:textSize="30sp"
-            android:textColor="#FFFFFF"
+            android:backgroundTint="#000000"
             android:fontFamily="sans-serif-black"
             android:padding="12dp"
             android:layout_margin="10dp" />

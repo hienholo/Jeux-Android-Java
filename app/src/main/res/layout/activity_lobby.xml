@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background"
+    tools:context=".screen.multi.RechercheClientServer">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplayer Lobby"
+        android:textSize="24sp"
+        android:textColor="@color/primaryText"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/host_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Host Game"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/discover_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discover Devices"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/secondaryColor"
+        android:textColor="@color/white"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Available Devices:"
+        android:textSize="18sp"
+        android:textColor="@color/secondaryText"
+        android:layout_marginBottom="8dp"/>
+
+    <ListView
+        android:id="@+id/device_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/dividerColor"
+        android:dividerHeight="1dp"
+        android:background="@color/cardBackground"/>
+</LinearLayout>

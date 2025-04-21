@@ -1,4 +1,4 @@
-package com.iot.jeux_mobile;
+package com.iot.jeux_mobile.screen;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -9,39 +9,31 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
-import com.iot.jeux_mobile.qcm.ChoixJeuxQcm;
-import com.iot.jeux_mobile.screen.ChoixJeuxScreen;
-import com.iot.jeux_mobile.screen.multi.PodsStartMulti;
-import com.iot.jeux_mobile.screen.multi.RechercheClientServer;
+import com.iot.jeux_mobile.R;
 
-public class CategoryActivity extends AppCompatActivity {
+public class ChoixJeuxScreen extends AppCompatActivity {
 
-    private Button btnCapteurs, btnMouvement, btnQuestion;
+    private Button btnLabyrinthe, btnIntruit;
     private MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_category);
+        setContentView(R.layout.choix_screen);
 
         // Initialisation des boutons
-        btnCapteurs = findViewById(R.id.btnCapteurs);
-        btnMouvement = findViewById(R.id.btnMouvement);
-        btnQuestion = findViewById(R.id.btnQuestion);
+        btnLabyrinthe = findViewById(R.id.btnLabyrinthe);
+        btnIntruit = findViewById(R.id.btnIntruit);
+
 
         // Navigation
-        btnCapteurs.setOnClickListener(v -> {
-            Intent intent = new Intent(CategoryActivity.this, RechercheClientServer.class);
+        btnLabyrinthe.setOnClickListener(v -> {
+            Intent intent = new Intent(ChoixJeuxScreen.this, JeuLabyrintheActivity.class);
             startActivity(intent);
         });
 
-        btnMouvement.setOnClickListener(v -> {
-            Intent intent = new Intent(CategoryActivity.this, ChoixJeuxScreen.class);
-            startActivity(intent);
-        });
-
-        btnQuestion.setOnClickListener(v -> {
-            Intent intent = new Intent(CategoryActivity.this, ChoixJeuxQcm.class);
+        btnIntruit.setOnClickListener(v -> {
+            Intent intent = new Intent(ChoixJeuxScreen.this, PodsStart.class);
             startActivity(intent);
         });
 
@@ -53,7 +45,7 @@ public class CategoryActivity extends AppCompatActivity {
                 .into(backgroundGif);
 
         // Lecture audio en boucle
-        mediaPlayer = MediaPlayer.create(this, R.raw.start);
+        mediaPlayer = MediaPlayer.create(this, R.raw.playe);
         mediaPlayer.setLooping(true);
     }
 
