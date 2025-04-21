@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">jeux_mobile</string>
+    <string name="app_name"></string>
+    <string name="game_title">Pods Game</string>
+    <string name="game_instructions">Clic sur les lumières rouges et évite les autres</string>
+    <string name="start">Start</string>
+    <string name="temps_jeux"> Choisissez Votre  Temps de Jeu</string>
+
+    <string name="lobby_title">Multiplayer</string>
+    <string name="host_game">Host Game</string>
+    <string name="discover_devices">Discover Devices</string>
+    <string name="available_devices">Available Devices:</string>
+
 </resources>
+
