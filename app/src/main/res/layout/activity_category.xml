@@ -20,39 +20,42 @@
 
         <Button
             android:id="@+id/btnCapteurs"
-            android:layout_width="300dp"
-            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
             android:text="CAPTEURS"
             android:textAllCaps="false"
             android:textSize="30sp"
+            android:background="@drawable/cap_cat"
             android:textColor="#FFFFFF"
             android:fontFamily="sans-serif-black"
-            android:padding="12dp"
-            android:layout_margin="10dp" />
+            android:padding="0dp"
+            android:layout_margin="0dp" />
 
         <Button
             android:id="@+id/btnMouvement"
-            android:layout_width="300dp"
-            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
             android:text="TAP SCREEN"
             android:textAllCaps="false"
             android:textSize="30sp"
             android:textColor="#FFFFFF"
+            android:background="@drawable/tap_bg"
             android:fontFamily="sans-serif-black"
-            android:padding="12dp"
-            android:layout_margin="10dp" />
+            android:padding="0dp"
+            android:layout_margin="-4dp" />
 
         <Button
             android:id="@+id/btnQuestion"
-            android:layout_width="300dp"
-            android:layout_height="70dp"
-            android:text="Q-C-M"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text=""
             android:textAllCaps="false"
             android:textSize="30sp"
             android:textColor="#FFFFFF"
             android:fontFamily="sans-serif-black"
-            android:padding="12dp"
-            android:layout_margin="10dp" />
+            android:background="@drawable/bg_qcm"
+            android:padding="0dp"
+            android:layout_margin="0dp" />
 
     </LinearLayout>
 

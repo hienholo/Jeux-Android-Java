@@ -3,7 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     ources>
-    <color name="primaryColor">#3F51B5</color>
+    <color name="primaryColor">#803F51B5</color>
     <color name="secondaryColor">#FF5722</color>
     <color name="background">#FAFAFA</color>
     <color name="cardBackground">#FFFFFF</color>

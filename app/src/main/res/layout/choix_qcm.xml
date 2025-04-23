@@ -1,49 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- GIF en fond -->
+    <!-- Arrière-plan avec superposition semi-transparente -->
     <ImageView
         android:id="@+id/backgroundGif"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
+        android:background="@drawable/catgif"
         android:contentDescription="GIF background" />
 
-    <!-- Contenu par-dessus -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <!-- Contenu principal -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center"
-        android:padding="16dp">
+        android:padding="32dp">
 
-        <Button
-            android:id="@+id/btnCalcul"
-            android:layout_width="300dp"
-            android:layout_height="70dp"
-            android:text="Culture Générale"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#000000"
-            android:fontFamily="sans-serif-black"
-            android:padding="12dp"
+        <!-- Titre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choisissez un Mode"
+            android:textColor="#FFFF4444"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="sans-serif-condensed"/>
 
-            android:layout_margin="10dp" />
+        <!-- Conteneur des boutons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#000000"
+            android:padding="24dp"
+            android:elevation="16dp">
 
-        <Button
-            android:id="@+id/btnCulture"
-            android:layout_width="300dp"
-            android:layout_height="70dp"
-            android:text="Calcul Mental"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#000000"
-            android:fontFamily="sans-serif-black"
-            android:padding="12dp"
-            android:layout_margin="10dp" />
+            <!-- Bouton Culture Générale -->
+            <Button
+                android:id="@+id/btnCalcul"
+                android:layout_width="280dp"
+                android:layout_height="80dp"
+                android:text="Calcul Mental"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:textColor="#FFFFFFFF"
+                android:backgroundTint="#D0FF4444"
+                android:fontFamily="sans-serif-medium"
+                android:drawableTint="#FFFFFFFF"
+                android:elevation="8dp"
+                android:letterSpacing="0.02"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Séparateur -->
+            <View
+                android:layout_width="200dp"
+                android:layout_height="2dp"
+                android:background="#60FFFFFF"
+                android:layout_marginVertical="16dp"/>
+
+            <!-- Bouton Calcul Mental -->
+            <Button
+                android:id="@+id/btnCulture"
+                android:layout_width="280dp"
+                android:layout_height="80dp"
+                android:text="Culture Générale"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:textColor="#FFFFFFFF"
+                android:backgroundTint="#D0FF4444"
+                android:fontFamily="sans-serif-medium"
+                android:drawableTint="#FFFFFFFF"
+                android:elevation="8dp"
+                android:letterSpacing="0.02"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

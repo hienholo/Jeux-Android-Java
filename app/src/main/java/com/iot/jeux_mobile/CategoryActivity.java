@@ -9,10 +9,11 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
-import com.iot.jeux_mobile.qcm.ChoixJeuxQcm;
+import com.iot.jeux_mobile.capteur.ChoixJeuxCapteur;
 import com.iot.jeux_mobile.screen.ChoixJeuxScreen;
-import com.iot.jeux_mobile.screen.multi.PodsStartMulti;
-import com.iot.jeux_mobile.screen.multi.RechercheClientServer;
+import com.iot.jeux_mobile.capteur.JeuxCap2;
+import com.iot.jeux_mobile.qcm.ChoixJeuxQcm;
+
 
 public class CategoryActivity extends AppCompatActivity {
 
@@ -31,7 +32,7 @@ public class CategoryActivity extends AppCompatActivity {
 
         // Navigation
         btnCapteurs.setOnClickListener(v -> {
-            Intent intent = new Intent(CategoryActivity.this, RechercheClientServer.class);
+            Intent intent = new Intent(CategoryActivity.this, ChoixJeuxCapteur.class);
             startActivity(intent);
         });
 

@@ -1,9 +1,9 @@
-package com.iot.jeux_mobile.screen.multi;
+package com.iot.jeux_mobile;
 
 import android.Manifest;
-import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothServerSocket;
 import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -15,20 +15,25 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-import com.iot.jeux_mobile.R;
+
+import com.iot.jeux_mobile.capteur.JeuxCap2Multi;
+import com.iot.jeux_mobile.screen.multi.BluetoothConnectionManager;
+import com.iot.jeux_mobile.screen.multi.BluetoothDiscoveryReceiver;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class RechercheClientServer extends AppCompatActivity {
+public class BluetoothCreateOrJoin extends AppCompatActivity implements BluetoothDiscoveryReceiver.DeviceFoundListener {
+
     private static final UUID APP_UUID = UUID.fromString("8ce255c0-200a-11e0-ac64-0800200c9a66");
     private static final int DISCOVERABLE_DURATION = 300;
     private static final int REQUEST_ENABLE_BT = 1;
-    private static final int NAME_INPUT_REQUEST = 1001;
 
     private BluetoothAdapter bluetoothAdapter;
     private final List<BluetoothDevice> discoveredDevices = new ArrayList<>();
@@ -60,13 +65,16 @@ public class RechercheClientServer extends AppCompatActivity {
         Button discoverButton = findViewById(R.id.discover_button);
         Button hostButton = findViewById(R.id.host_button);
 
-        discoverButton.setOnClickListener(v -> startDiscovery());
+        discoverButton.setOnClickListener(v -> {
+            isHost = false;
+            startDiscovery();
+        });
         hostButton.setOnClickListener(v -> {
             isHost = true;
             makeDeviceDiscoverable();
         });
-        listView.setOnItemClickListener((parent, view, position, id) ->
-                connectToDevice(discoveredDevices.get(position)));
+
+        listView.setOnItemClickListener((parent, view, position, id) -> connectToDevice(discoveredDevices.get(position)));
     }
 
     private void checkPermissions() {
@@ -96,15 +104,18 @@ public class RechercheClientServer extends AppCompatActivity {
         discoveredDevices.clear();
         deviceAdapter.clear();
 
-        discoveryReceiver = new BluetoothDiscoveryReceiver(device -> {
-            runOnUiThread(() -> {
-                String deviceName = device.getName() != null ? device.getName() : "Inconnu";
-                String deviceInfo = deviceName + "\n" + device.getAddress();
-                if (!discoveredDevices.contains(device)) {
-                    discoveredDevices.add(device);
-                    deviceAdapter.add(deviceInfo);
-                }
-            });
+        discoveryReceiver = new BluetoothDiscoveryReceiver(new BluetoothDiscoveryReceiver.DeviceFoundListener() {
+            @Override
+            public void onDeviceFound(BluetoothDevice device) {
+                runOnUiThread(() -> {
+                    String deviceName = device.getName() != null ? device.getName() : "Inconnu";
+                    String deviceInfo = deviceName + "\n" + device.getAddress();
+                    if (!discoveredDevices.contains(device)) {
+                        discoveredDevices.add(device);
+                        deviceAdapter.add(deviceInfo);
+                    }
+                });
+            }
         });
         registerReceiver(discoveryReceiver, new IntentFilter(BluetoothDevice.ACTION_FOUND));
         bluetoothAdapter.startDiscovery();
@@ -123,43 +134,21 @@ public class RechercheClientServer extends AppCompatActivity {
                 BluetoothSocket socket = device.createRfcommSocketToServiceRecord(APP_UUID);
                 socket.connect();
                 BluetoothConnectionManager.getInstance().init(socket);
-
-                runOnUiThread(() ->
-                        startActivityForResult(new Intent(this, PodsStartMulti.class), NAME_INPUT_REQUEST));
-
+                playerName = "Client";
+                runOnUiThread(() -> launchGameActivity(playerName, "Hôte"));
             } catch (IOException e) {
-                runOnUiThread(() ->
-                        Toast.makeText(this, "Échec de la connexion", Toast.LENGTH_SHORT).show());
+                runOnUiThread(() -> Toast.makeText(this, "Échec de la connexion", Toast.LENGTH_SHORT).show());
             }
         }).start();
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == NAME_INPUT_REQUEST && resultCode == RESULT_OK && data != null) {
-            playerName = data.getStringExtra("PLAYER_NAME");
-            BluetoothConnectionManager.getInstance().sendMessage("NAME|" + playerName);
-            launchGameActivity(playerName, "Adversaire");
-        }
     }
 
     private void hostGame() {
         new Thread(() -> {
             try {
-                BluetoothSocket socket = bluetoothAdapter.listenUsingRfcommWithServiceRecord("PodsGame", APP_UUID).accept();
+                BluetoothServerSocket serverSocket = bluetoothAdapter.listenUsingRfcommWithServiceRecord("PodsGame", APP_UUID);
+                BluetoothSocket socket = serverSocket.accept();
                 BluetoothConnectionManager.getInstance().init(socket);
-
-                BluetoothConnectionManager.getInstance().listen(message -> {
-                    if (message.startsWith("NAME|")) {
-                        String opponentName = message.substring(5);
-                        runOnUiThread(() -> launchGameActivity("Hôte", opponentName));
-                    }
-                    else if (message.startsWith("DURATION|")) {
-                        int duration = Integer.parseInt(message.substring(9));
-                        runOnUiThread(() -> launchGameActivity("Hôte", "Adversaire", duration));
-                    }
-                });
+                runOnUiThread(() -> launchGameActivity("Hôte", "Client"));
             } catch (IOException e) {
                 Log.e("HostError", "Erreur d'hébergement", e);
             }
@@ -167,19 +156,10 @@ public class RechercheClientServer extends AppCompatActivity {
     }
 
     private void launchGameActivity(String playerName, String opponentName) {
-        Intent intent = new Intent(this, PodsActivity.class);
+        Intent intent = new Intent(this, JeuxCap2Multi.class);
         intent.putExtra("PLAYER_NAME", playerName);
         intent.putExtra("OPPONENT_NAME", opponentName);
         intent.putExtra("role", isHost ? "host" : "client");
-        startActivity(intent);
-    }
-
-    private void launchGameActivity(String playerName, String opponentName, int duration) {
-        Intent intent = new Intent(this, PodsActivity.class);
-        intent.putExtra("PLAYER_NAME", playerName);
-        intent.putExtra("OPPONENT_NAME", opponentName);
-        intent.putExtra("GAME_DURATION", duration);
-        intent.putExtra("role", "host");
         startActivity(intent);
     }
 
@@ -194,8 +174,13 @@ public class RechercheClientServer extends AppCompatActivity {
         try {
             if (discoveryReceiver != null) unregisterReceiver(discoveryReceiver);
         } catch (Exception e) {
-            Log.w("LobbyActivity", "Récepteur non enregistré", e);
+            Log.w("LobbyActivity", "Receiver non enregistré", e);
         }
         BluetoothConnectionManager.getInstance().close();
+    }
+
+    @Override
+    public void onDeviceFound(BluetoothDevice device) {
+        // Non utilisé ici
     }
 }

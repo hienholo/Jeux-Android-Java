@@ -9,6 +9,7 @@
     <string name="host_game">Host Game</string>
     <string name="discover_devices">Discover Devices</string>
     <string name="available_devices">Available Devices:</string>
+    <string name="todo">TODO</string>
 
 </resources>
 
