@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
-import com.iot.jeux_mobile.MainMenuActivity;
+import com.iot.jeux_mobile.OptionActivity;
 import com.iot.jeux_mobile.R;
 import com.iot.jeux_mobile.capteur.JeuxCap1;
 import com.iot.jeux_mobile.capteur.JeuxCap2;
@@ -31,13 +31,13 @@ public class ChoixJeuxCapteur extends AppCompatActivity {
 
         // Navigation
         btnLabyrinthe.setOnClickListener(v -> {
-            Intent intent = new Intent(ChoixJeuxCapteur.this, MainMenuActivity.class); // Changement ici
+            Intent intent = new Intent(ChoixJeuxCapteur.this, OptionActivity.class); // Changement ici
             intent.putExtra("GAME_MODE", "zombie"); // Ajout de cette ligne
             startActivity(intent);
         });
 
         btnIntruit.setOnClickListener(v -> {
-            Intent intent = new Intent(ChoixJeuxCapteur.this, MainMenuActivity.class);  // Changement ici
+            Intent intent = new Intent(ChoixJeuxCapteur.this, OptionActivity.class);  // Changement ici
             intent.putExtra("GAME_MODE", "war"); // Ajout de cette ligne
             startActivity(intent);
         });

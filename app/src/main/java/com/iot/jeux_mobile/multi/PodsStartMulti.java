@@ -1,4 +1,4 @@
-package com.iot.jeux_mobile.screen.multi;
+package com.iot.jeux_mobile.multi;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.iot.jeux_mobile.R;
 
 public class PodsStartMulti extends AppCompatActivity {

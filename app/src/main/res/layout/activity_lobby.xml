@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:background="@color/background"
-    tools:context=".screen.multi.RechercheClientServer">
+    tools:context=".multi.RechercheClientServer">
 
     <TextView
         android:layout_width="match_parent"

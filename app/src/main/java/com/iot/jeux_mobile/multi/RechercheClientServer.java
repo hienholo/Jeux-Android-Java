@@ -1,7 +1,6 @@
-package com.iot.jeux_mobile.screen.multi;
+package com.iot.jeux_mobile.multi;
 
 import android.Manifest;
-import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
@@ -18,7 +17,9 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+
 import com.iot.jeux_mobile.R;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;

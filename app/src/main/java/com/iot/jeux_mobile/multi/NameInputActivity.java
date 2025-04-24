@@ -1,4 +1,4 @@
-package com.iot.jeux_mobile.screen.multi;
+package com.iot.jeux_mobile.multi;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
