@@ -6,14 +6,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.iot.jeux_mobile.capteur.JeuxCap1;
 import com.iot.jeux_mobile.capteur.JeuxCap2;
+import com.iot.jeux_mobile.multi.BluetoothCreateOrJoin;
+import com.iot.jeux_mobile.multi.RechercheClientServer;
 import com.iot.jeux_mobile.qcm.CalculMental;
 import com.iot.jeux_mobile.qcm.QuizActivity;
 import com.iot.jeux_mobile.screen.JeuLabyrintheActivity;
 import com.iot.jeux_mobile.screen.PodsActivity;
 import com.iot.jeux_mobile.screen.PodsStart;
-import com.iot.jeux_mobile.screen.multi.RechercheClientServer;
 
-public class MainMenuActivity extends AppCompatActivity {
+public class OptionActivity extends AppCompatActivity {
 
     private String gameMode; // Pour stocker le mode de jeu (Labyrinthe ou Intruit)
 
@@ -42,27 +43,27 @@ public class MainMenuActivity extends AppCompatActivity {
         btnPlay.setOnClickListener(v -> {
             Intent intent = new Intent();
             if ("Labyrinthe".equals(gameMode)) {
-                intent = new Intent(MainMenuActivity.this, JeuLabyrintheActivity.class); // ou SoloLabyrintheActivity
+                intent = new Intent(OptionActivity.this, JeuLabyrintheActivity.class); // ou SoloLabyrintheActivity
             } else if ("Intruit".equals(gameMode)) {
-                intent = new Intent(MainMenuActivity.this, PodsActivity.class); // ou SoloIntruitActivity
+                intent = new Intent(OptionActivity.this, PodsActivity.class); // ou SoloIntruitActivity
             }
          else if ("qcm".equals(gameMode)) {
-            intent = new Intent(MainMenuActivity.this, QuizActivity.class); // ou SoloIntruitActivity
+            intent = new Intent(OptionActivity.this, QuizActivity.class); // ou SoloIntruitActivity
         }
             else if ("calcul".equals(gameMode)) {
-                intent = new Intent(MainMenuActivity.this, CalculMental.class); // ou SoloIntruitActivity
+                intent = new Intent(OptionActivity.this, CalculMental.class); // ou SoloIntruitActivity
             }
 
             else if ("war".equals(gameMode)) {
-                intent = new Intent(MainMenuActivity.this, JeuxCap2.class); // ou SoloIntruitActivity
+                intent = new Intent(OptionActivity.this, JeuxCap2.class); // ou SoloIntruitActivity
             }
             else if ("zombie".equals(gameMode)) {
-                intent = new Intent(MainMenuActivity.this, JeuxCap1.class); // ou SoloIntruitActivity
+                intent = new Intent(OptionActivity.this, JeuxCap1.class); // ou SoloIntruitActivity
             }
 
 
             else {
-               // intent = new Intent(MainMenuActivity.this, SoloGameActivity.class); // prévoir un comportement par défaut
+               // intent = new Intent(OptionActivity.this, SoloGameActivity.class); // prévoir un comportement par défaut
             }
             startActivity(intent);
         });
@@ -72,18 +73,18 @@ public class MainMenuActivity extends AppCompatActivity {
         btnPlayWithFriend.setOnClickListener(v -> {
             Intent intent = new Intent();
             if ("Labyrinthe".equals(gameMode)) {
-                //intent = new Intent(MainMenuActivity.this, MultiplayerActivity.class); // ou MultiLabyrintheActivity
+                //intent = new Intent(OptionActivity.this, MultiplayerActivity.class); // ou MultiLabyrintheActivity
             } else if ("Intruit".equals(gameMode)) {
-                intent = new Intent(MainMenuActivity.this, RechercheClientServer.class);  // ou MultiIntruitActivity
+                intent = new Intent(OptionActivity.this, RechercheClientServer.class);  // ou MultiIntruitActivity
             }
             else if ("war".equals(gameMode)) {
-                intent = new Intent(MainMenuActivity.this, BluetoothCreateOrJoin.class); // ou SoloIntruitActivity
+                intent = new Intent(OptionActivity.this, BluetoothCreateOrJoin.class); // ou SoloIntruitActivity
             }
             else if ("zombie".equals(gameMode)) {
-                intent = new Intent(MainMenuActivity.this, BluetoothCreateOrJoin.class); // ou SoloIntruitActivity
+                intent = new Intent(OptionActivity.this, BluetoothCreateOrJoin.class); // ou SoloIntruitActivity
             }
             else {
-               intent = new Intent(MainMenuActivity.this, RechercheClientServer.class); // prévoir un comportement par défaut
+               intent = new Intent(OptionActivity.this, RechercheClientServer.class); // prévoir un comportement par défaut
             }
 
 
@@ -95,11 +96,11 @@ public class MainMenuActivity extends AppCompatActivity {
         btnTraining.setOnClickListener(v -> {
             Intent intent = new Intent();
             if ("Labyrinthe".equals(gameMode)) {
-             //   intent = new Intent(MainMenuActivity.this, TrainingActivity.class);  // ou TrainingLabyrintheActivity
+             //   intent = new Intent(OptionActivity.this, TrainingActivity.class);  // ou TrainingLabyrintheActivity
             } else if ("Intruit".equals(gameMode)) {
-                intent = new Intent(MainMenuActivity.this, PodsStart.class); // ou TrainingIntruitActivity
+                intent = new Intent(OptionActivity.this, PodsStart.class); // ou TrainingIntruitActivity
             } else {
-                intent = new Intent(MainMenuActivity.this, PodsStart.class);  // prévoir un comportement par défaut
+                intent = new Intent(OptionActivity.this, PodsStart.class);  // prévoir un comportement par défaut
             }
             startActivity(intent);
         });
@@ -107,7 +108,7 @@ public class MainMenuActivity extends AppCompatActivity {
         // Mes Scores
         Button btnScores = findViewById(R.id.btn_scores);
         btnScores.setOnClickListener(v -> {
-          //  Intent intent = new Intent(MainMenuActivity.this, ScoreboardActivity.class);
+          //  Intent intent = new Intent(OptionActivity.this, ScoreboardActivity.class);
           //  startActivity(intent);
         });
 

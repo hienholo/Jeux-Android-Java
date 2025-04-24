@@ -1,4 +1,4 @@
-package com.iot.jeux_mobile.screen.multi;
+package com.iot.jeux_mobile.multi;
 
 import android.bluetooth.BluetoothDevice;
 import android.content.BroadcastReceiver;

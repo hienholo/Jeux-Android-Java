@@ -1,4 +1,4 @@
-package com.iot.jeux_mobile.screen.multi;
+package com.iot.jeux_mobile.multi;
 
 import android.bluetooth.BluetoothSocket;
 import android.os.Looper;

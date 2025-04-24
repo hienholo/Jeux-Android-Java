@@ -1,11 +1,10 @@
-package com.iot.jeux_mobile.capteur;
+package com.iot.jeux_mobile.multi;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothDevice;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Rect;
@@ -33,7 +32,7 @@ import androidx.core.graphics.Insets;
 import android.view.animation.LinearInterpolator;
 
 import com.iot.jeux_mobile.R;
-import com.iot.jeux_mobile.screen.multi.BluetoothConnectionManager; // Import de la classe de gestion Bluetooth
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

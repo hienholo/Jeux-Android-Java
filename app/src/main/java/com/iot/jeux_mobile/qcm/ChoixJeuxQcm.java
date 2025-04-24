@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
-import com.iot.jeux_mobile.MainMenuActivity;
+import com.iot.jeux_mobile.OptionActivity;
 import com.iot.jeux_mobile.R;
 import com.iot.jeux_mobile.screen.ChoixJeuxScreen;
 
@@ -30,13 +30,13 @@ public class ChoixJeuxQcm extends AppCompatActivity {
 
         // Navigation
         btnCulture.setOnClickListener(v -> {
-            Intent intent = new Intent(ChoixJeuxQcm.this, MainMenuActivity.class); // Changement ici
+            Intent intent = new Intent(ChoixJeuxQcm.this, OptionActivity.class); // Changement ici
             intent.putExtra("GAME_MODE", "qcm"); // Ajout de cette ligne
             startActivity(intent);
         });
 
         btnCalcul.setOnClickListener(v -> {
-            Intent intent = new Intent(ChoixJeuxQcm.this, MainMenuActivity.class); // Changement ici
+            Intent intent = new Intent(ChoixJeuxQcm.this, OptionActivity.class); // Changement ici
             intent.putExtra("GAME_MODE", "calcul"); // Ajout de cette ligne
             startActivity(intent);
         });
