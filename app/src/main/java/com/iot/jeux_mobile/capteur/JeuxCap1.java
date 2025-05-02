@@ -146,7 +146,7 @@ public class JeuxCap1 extends AppCompatActivity implements SensorEventListener {
             holder.addCallback(this);
 
             ballPaint.setColor(Color.BLUE);
-            holePaint.setColor(Color.BLACK);
+            holePaint.setColor(Color.RED);
         }
 
         class Hole {

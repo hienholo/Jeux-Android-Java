@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#FF000000"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/player1NameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joueur 1"
+            android:textColor="#FFFF4444"
+            android:textSize="28sp"
+            android:textStyle="bold|italic"/>
+
+        <TextView
+            android:id="@+id/player1ScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:textColor="#FFFFFFFF"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:background="#FFFF4444"
+        android:layout_marginVertical="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:id="@+id/player2NameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joueur 2"
+            android:textColor="#FFFF4444"
+            android:textSize="28sp"
+            android:textStyle="bold|italic"/>
+
+        <TextView
+            android:id="@+id/player2ScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:textColor="#FFFFFFFF"
+            android:textSize="24sp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:spacing="16dp">
+
+        <Button
+            android:id="@+id/playAgainButton"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:text="Rejouer"
+            android:backgroundTint="#FFFF4444"
+            android:textColor="#FFFFFFFF"
+            android:textAllCaps="false"
+            android:elevation="4dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:text="Quitter"
+            android:backgroundTint="#FF444444"
+            android:textColor="#FFFFFFFF"
+            android:textAllCaps="false"
+            android:elevation="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>

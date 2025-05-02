@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    ources>
+    <color name="primaryColor">#803F51B5</color>
+    <color name="secondaryColor">#FF5722</color>
+    <color name="background">#FAFAFA</color>
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+    <color name="dividerColor">#E0E0E0</color>
+
 </resources>

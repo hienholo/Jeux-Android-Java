@@ -2,31 +2,29 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-
-    <uses-permission android:name="android.permission.BODY_SENSORS"/>
-    <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.BLUETOOTH"/>
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
-        tools:ignore="CoarseFineLocation" />
-    <uses-permission android:name="android.hardware.sensor.accelerometer"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.hardware.sensor.accelerometer" />
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
-
-
-    <uses-permission android:name="android.permission.VIBRATE"/>
-
-
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
-        android:theme="@style/Theme.AppCompat.Light"
-        android:label="Jeux Mobile"
         android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher_round">
+        android:label="Jeux Mobile"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.AppCompat.Light">
 
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,25 +32,46 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".CategoryActivity"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
-        <activity android:name=".capteur.JeuxCap1"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
-        <activity android:name=".capteur.JeuxCapteur2"
+        <activity android:name=".CategoryActivity" />
+        <activity
+            android:name=".screen.ChoixJeuxScreen"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
 
-        <activity android:name=".capteur.BluetoothGameActivity"
+        <activity android:name=".capteur.ChoixJeuxCapteur" />
+        <activity
+            android:name=".capteur.JeuxCap1"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity android:name=".capteur.JeuxCap2" />
+        <activity
+            android:name=".capteur.BluetoothGameActivity"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
 
-        <activity
-            android:name=".capteur.JeuxCapMultiplayer"/>
-        <activity
-            android:name=".capteur.JeuLabyrintheActivity"/>
+        <activity android:name=".multi.JeuxCap2Multi" />
+
+        <activity android:name=".qcm.ChoixJeuxQcm"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity android:name=".qcm.CalculMental" />
+        <activity android:name=".qcm.QuizActivity" />
 
         <activity
-            android:name=".qcm.CalculMental"/>
+            android:name=".screen.JeuLabyrintheActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity android:name=".screen.PodsStart" />
+        <activity android:name=".screen.PodsActivity" />
+
+        <activity android:name=".multi.PodsStartMulti" />
+        <activity android:name=".multi.PodsActivity" />
         <activity
-            android:name=".qcm.QuizActivity"/>
+            android:name=".multi.NameInputActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert"
+            android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".multi.ResultsActivity" />
+
+        <activity android:name=".multi.RechercheClientServer"
+            android:exported="true" />
+        <activity android:name=".OptionActivity" />
+        <activity android:name="com.iot.jeux_mobile.multi.BluetoothCreateOrJoin" />
 
     </application>
+
 </manifest>

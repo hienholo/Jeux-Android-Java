@@ -1,4 +1,4 @@
-package com.iot.jeux_mobile.capteur;
+package com.iot.jeux_mobile.screen;
 
 import android.app.Activity;
 import android.app.AlertDialog;
